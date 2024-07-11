@@ -32,3 +32,5 @@ const getGreetEmployeeMessages = (employees) =>
 
 const greetEmployeeMessages = getGreetEmployeeMessages(employeeData);
 console.log(greetEmployeeMessages);
+
+console.log("------------------------------------");
