@@ -48,3 +48,23 @@ const titles = getBookTitles(books);
 console.log(titles); // Output: ['The Great Gatsby', 'To Kill a Mockingbird', '1984', 'Pride and Prejudice']
 
 console.log("------------------------------------");
+
+const studentName = [
+  "Ram",
+  "Anjali",
+  "Arpit",
+  "Bhanu Kumar",
+  "Jaya",
+  "Ankit",
+  "shayam",
+];
+
+const getStudentNames = (students) =>
+  students.filter((student) => student.charAt(0).includes("A"));
+
+const studentNames = getStudentNames(studentName);
+
+console.log(studentNames);
+// Output: ["Anjali", "Arpit", "Ankit"]
+
+console.log("------------------------------------");
