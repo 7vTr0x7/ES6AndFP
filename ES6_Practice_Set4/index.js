@@ -54,3 +54,16 @@ const filterWords = (arr) => {
 
 var words = ["eat", "sleep", "code", "repeat", "neog", "community"];
 console.log(filterWords(words)); // ["repeat", "community"]
+
+console.log("-------------------------------");
+
+const capitalizeWords = (arr) => {
+  const capitalized = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    capitalized.push(arr[i].toUpperCase());
+  }
+  return capitalized;
+};
+console.log(capitalizeWords(["eat", "sleep", "code", "repeat"]));
+// ["EAT", "SLEEP", "CODE", "REPEAT"]
