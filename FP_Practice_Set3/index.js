@@ -216,3 +216,10 @@ console.log(concatenateStrings(strings));
 // Output: "Hello world!"
 
 console.log("-------------------------------------");
+
+const numbersArray = [10, 5, 8, 3, 6];
+
+const getMinimumNumber = (numbers) =>
+  numbers.reduce((acc, curr) => (acc < curr ? acc : curr));
+console.log(getMinimumNumber(numbersArray));
+// Output: 3
