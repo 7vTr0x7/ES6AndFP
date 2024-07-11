@@ -117,6 +117,8 @@ console.log(checkForTeam({ firstName: "John", lastName: "Dee", team: "B" }));
 console.log(checkForTeam({ firstName: "Priya", lastName: "Raj" }));
 // {firstName: 'Priya', lastName: 'Raj', team: 'A'}
 
+console.log("-------------------------------");
+
 const book = {
   title: "JavaScript: The Definitive Guide",
   authors: [
@@ -136,3 +138,34 @@ console.log(title); // JavaScript: The Definitive Guide
 console.log(author1); // Dav2d Flanagan
 console.log(author2); // Yukihiro Matsumoto
 console.log(publisherName); // O'Reilly Media
+
+console.log("-------------------------------");
+
+var array1 = [
+  {
+    name: "Jay",
+    age: 60,
+  },
+  {
+    name: "Gloria",
+    age: 36,
+  },
+  {
+    name: "Manny",
+    age: 16,
+  },
+  {
+    name: "Joe",
+    age: 9,
+  },
+];
+
+const sumOfAges = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i].age;
+  }
+  return sum;
+};
+
+console.log(sumOfAges(array1)); // 121
