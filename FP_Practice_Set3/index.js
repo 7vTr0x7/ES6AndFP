@@ -43,3 +43,17 @@ console.log(electronicsProduct);
 // Output: { name: "iPad", price: 799, category: "electronics" }
 
 console.log("-------------------------------------");
+
+const productsArray = [
+  { name: "Toothbrush", price: 29, category: "health" },
+  { name: "Coffee Maker", price: 99, category: "home" },
+  { name: "iPad", price: 799, category: "electronics" },
+  { name: "Smartwatch", price: 199, category: "electronics" },
+];
+const getAllElectronicProducts = (products) =>
+  products.filter((prod) => prod.category === "electronics");
+const electronicProducts = getAllElectronicProducts(productsArray);
+console.log(electronicProducts);
+// Output: [{ name: "iPad", price: 799, category: "electronics" }, { name: "Smartwatch", price: 199, category: "electronics" }]
+
+console.log("-------------------------------------");
