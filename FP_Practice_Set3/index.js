@@ -72,3 +72,20 @@ console.log(highGradeStudents);
 // Output: [{ name: "Alice", age: 16, grade: 90 }, { name: "Charlie", age: 15, grade: 95 }]
 
 console.log("-------------------------------------");
+
+const books = [
+  { title: "The Lord of the Rings", author: "J.R.R. Tolkien", pageCount: 1178 },
+  { title: "To Kill a Mockingbird", author: "Harper Lee", pageCount: 281 },
+  {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    author: "Douglas Adams",
+    pageCount: 193,
+  },
+  { title: "The Name of the Wind", author: "Patrick Rothfuss", pageCount: 662 },
+];
+
+const findBookWithMoreThan500Pages = (books) =>
+  books.find((book) => book.pageCount > 500);
+
+const bookWithMoreThan500Pages = findBookWithMoreThan500Pages(books);
+console.log(bookWithMoreThan500Pages);
