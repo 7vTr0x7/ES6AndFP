@@ -93,3 +93,21 @@ console.log(isDivisibleBy7);
 // Output: 21
 
 console.log("------------------------------------");
+
+const namesArray = [
+  "Mohan",
+  "Anjali",
+  "Geetanjali",
+  "Ankit",
+  "Bhanu Kumar",
+  "Ramakrishnan",
+  "shayam",
+];
+// Your code here
+
+const isNamesGreaterThan8 = (names) => names.find((name) => name.length > 8);
+
+console.log(isNamesGreaterThan8(namesArray));
+// Output: "Geetanjali"
+
+console.log("------------------------------------");
