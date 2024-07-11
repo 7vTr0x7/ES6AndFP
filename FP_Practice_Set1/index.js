@@ -5,3 +5,9 @@ console.log(incrementNumbers(numbers));
 // Output: [4, 5, 6, 7, 8]
 
 console.log("----------------------------");
+
+const capitalizeArray = (arr) => arr.map((word) => word.toUpperCase());
+
+const myArray = ["apple", "banana", "cherry"];
+console.log(capitalizeArray(myArray));
+// Output: ["APPLE", "BANANA", "CHERRY"]
