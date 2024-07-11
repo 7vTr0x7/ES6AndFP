@@ -7,3 +7,13 @@ const peoples = [
 const getNames = () => peoples.map((people) => people.name);
 const names = getNames();
 console.log(names); // Output: ['Raj', 'Swapnil', 'Anushka']
+
+const numbers = [1, 2, 3, 4];
+// Your code here
+
+console.log("----------------");
+
+const getMultiplyByFive = (numbers) => numbers.map((num) => num * 5);
+const multiplyByFive = getMultiplyByFive(numbers);
+
+console.log(multiplyByFive); // Output: [5, 10, 15, 20]
