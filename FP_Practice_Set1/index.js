@@ -51,3 +51,10 @@ console.log(getCityNames(cities));
 // Output: ["New York", "Los Angeles", "Bangalore"]
 
 console.log("----------------------------");
+
+const filterLongStrings = (fruits) =>
+  fruits.filter((fruit) => fruit.length > 5);
+
+const fruits = ["apple", "banana", "cherry", "watermelon", "pineapple"];
+console.log(filterLongStrings(fruits));
+// Output: ["banana", "cherry", "watermelon", "pineapple"]
