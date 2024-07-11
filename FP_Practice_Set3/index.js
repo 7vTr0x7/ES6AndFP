@@ -126,3 +126,21 @@ const filterByGenre = (games, genre) =>
 const filteredGames = filterByGenre(games, "RPG");
 console.log(filteredGames);
 // Output: [{title: "The Witcher 3: Wild Hunt", developer: "CD Projekt Red", genre: "RPG"}]
+
+console.log("-------------------------------------");
+
+const newCarsArray = [
+  { make: "Toyota", model: "Corolla", year: 2010 },
+  { make: "Honda", model: "Civic", year: 2012 },
+  { make: "Toyota", model: "Camry", year: 2015 },
+  { make: "Ford", model: "Mustang", year: 2018 },
+];
+
+const getCarModel = (cars) => {
+  const filteredCars = cars.filter((car) => car.year > 2012);
+  return filteredCars.map((car) => car.model);
+};
+
+const carModels = getCarModel(newCarsArray);
+console.log(carModels);
+// Output: ["Camry", "Mustang"]
