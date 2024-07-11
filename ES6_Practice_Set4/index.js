@@ -67,3 +67,24 @@ const capitalizeWords = (arr) => {
 };
 console.log(capitalizeWords(["eat", "sleep", "code", "repeat"]));
 // ["EAT", "SLEEP", "CODE", "REPEAT"]
+
+console.log("-------------------------------");
+
+const getValues = (arr) => {
+  const values = [];
+  for (let i = 0; i < arr.length; i++) {
+    values.push(arr[i].name);
+  }
+  return values;
+};
+
+console.log(
+  getValues(
+    [
+      { name: "John", age: 21 },
+      { name: "Mary", age: 22 },
+      { name: "Peter", age: 23 },
+    ],
+    "name"
+  )
+); // ["John", "Mary", "Peter"]
