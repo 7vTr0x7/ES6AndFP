@@ -4,8 +4,8 @@ const peoples = [
   { name: "Anushka", age: 35 },
 ];
 
-const getNames = () => peoples.map((people) => people.name);
-const names = getNames();
+const getNames = (peoples) => peoples.map((people) => people.name);
+const names = getNames(peoples);
 console.log(names); // Output: ['Raj', 'Swapnil', 'Anushka']
 
 const numbers = [1, 2, 3, 4];
