@@ -69,3 +69,14 @@ console.log(isDivisibleBy3and5(numbersArray));
 // Output: [30, 15]
 
 console.log("----------------------------");
+
+const filterByAge = (peoples) => peoples.filter((people) => people.age > 30);
+
+const peoplesArray = [
+  { name: "Rahul", age: 25 },
+  { name: "Raj", age: 35 },
+  { name: "Vijay", age: 45 },
+];
+
+console.log(filterByAge(peoplesArray));
+// Output: [{ name: 'Raj', age: 35 }, { name: 'Vijay', age: 45 }]
