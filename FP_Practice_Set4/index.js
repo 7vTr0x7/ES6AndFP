@@ -28,3 +28,7 @@ console.log(totalValue(items));
 // Output: 60
 
 console.log("------------------------------");
+
+const concatStrings = (strings) =>
+  strings.reduce((acc, curr) => acc + curr, "");
+console.log(concatStrings(["this", "is", "fun"])); // Output: 'thisisfun
