@@ -38,3 +38,19 @@ const convertEvenToOdd = (arr) => {
 var numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(convertEvenToOdd(numArr));
 // [1, 3, 3, 5, 5, 7, 7, 9, 9]
+
+console.log("-------------------------------");
+
+const filterWords = (arr) => {
+  const words = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > 5) {
+      words.push(arr[i]);
+    }
+  }
+  return words;
+};
+
+var words = ["eat", "sleep", "code", "repeat", "neog", "community"];
+console.log(filterWords(words)); // ["repeat", "community"]
