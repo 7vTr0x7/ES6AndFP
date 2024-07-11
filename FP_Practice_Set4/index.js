@@ -16,3 +16,15 @@ console.log(sumSquares(numbers));
 // Output: 55
 
 console.log("------------------------------");
+
+const items = [
+  { name: "Item 1", price: 10 },
+  { name: "Item 2", price: 20 },
+  { name: "Item 3", price: 30 },
+];
+const totalValue = (items) => items.reduce((acc, curr) => acc + curr.price, 0);
+
+console.log(totalValue(items));
+// Output: 60
+
+console.log("------------------------------");
