@@ -208,3 +208,11 @@ console.log(getTotalCost(newProductsArray));
 // Output: 150
 
 console.log("-------------------------------------");
+
+const strings = ["Hello", " ", "world", "!"];
+const concatenateStrings = (strings) =>
+  strings.reduce((acc, curr) => acc + curr, "");
+console.log(concatenateStrings(strings));
+// Output: "Hello world!"
+
+console.log("-------------------------------------");
