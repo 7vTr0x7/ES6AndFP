@@ -58,3 +58,14 @@ const filterLongStrings = (fruits) =>
 const fruits = ["apple", "banana", "cherry", "watermelon", "pineapple"];
 console.log(filterLongStrings(fruits));
 // Output: ["banana", "cherry", "watermelon", "pineapple"]
+
+console.log("----------------------------");
+
+const isDivisibleBy3and5 = (numbers) =>
+  numbers.filter((num) => num % 3 === 0 && num % 5 === 0);
+
+const numbersArray = [1, 2, 30, 4, 15];
+console.log(isDivisibleBy3and5(numbersArray));
+// Output: [30, 15]
+
+console.log("----------------------------");
