@@ -116,3 +116,23 @@ console.log(checkForTeam({ firstName: "John", lastName: "Dee", team: "B" }));
 
 console.log(checkForTeam({ firstName: "Priya", lastName: "Raj" }));
 // {firstName: 'Priya', lastName: 'Raj', team: 'A'}
+
+const book = {
+  title: "JavaScript: The Definitive Guide",
+  authors: [
+    { name: "David Flanagan", age: 49 },
+    { name: "Yukihiro Matsumoto", age: 57 },
+  ],
+  publisher: { name: `O\\'Reilly Media'`, location: "CA" },
+};
+
+const { title, authors, publisher } = book;
+const [author1Details, author2Details] = authors;
+const author1 = author1Details.name;
+const author2 = author2Details.name;
+const publisherName = publisher.name;
+
+console.log(title); // JavaScript: The Definitive Guide
+console.log(author1); // Dav2d Flanagan
+console.log(author2); // Yukihiro Matsumoto
+console.log(publisherName); // O'Reilly Media
