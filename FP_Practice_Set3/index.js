@@ -89,3 +89,19 @@ const findBookWithMoreThan500Pages = (books) =>
 
 const bookWithMoreThan500Pages = findBookWithMoreThan500Pages(books);
 console.log(bookWithMoreThan500Pages);
+
+console.log("-------------------------------------");
+
+const customers = [
+  { name: "John", age: 25, gender: "Male" },
+  { name: "Jane", age: 30, gender: "Female" },
+  { name: "Bob", age: 40, gender: "Male" },
+  { name: "Alice", age: 35, gender: "Female" },
+];
+const getMaleCustomers = (customers) =>
+  customers.filter((cus) => cus.gender === "Male");
+
+const maleCustomers = getMaleCustomers(customers);
+console.log(maleCustomers);
+// Output: [{ name: 'John', age: 25, gender: 'Male' }, { name: 'Bob', age: 40, gender: 'Male' }]
+console.log("-------------------------------------");
