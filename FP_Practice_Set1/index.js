@@ -11,3 +11,17 @@ const capitalizeArray = (arr) => arr.map((word) => word.toUpperCase());
 const myArray = ["apple", "banana", "cherry"];
 console.log(capitalizeArray(myArray));
 // Output: ["APPLE", "BANANA", "CHERRY"]
+
+console.log("----------------------------");
+
+const getAges = (peoples) => peoples.map((people) => people.age);
+
+const people = [
+  { name: "Ankit", age: 25 },
+  { name: "Vinit", age: 24 },
+  { name: "Shashi", age: 29 },
+];
+const ages = getAges(people);
+console.log(ages); // Output: [25, 24, 29]
+
+console.log("----------------------------");
