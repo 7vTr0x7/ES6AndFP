@@ -191,3 +191,20 @@ const getAverageScore = (students) =>
   students.reduce((acc, curr) => acc + curr.score, 0) / students.length;
 console.log(getAverageScore(studentsArray));
 // Output: 82.5
+
+console.log("-------------------------------------");
+
+const newProductsArray = [
+  { name: "Shirt", price: 20, quantity: 2 },
+  { name: "Pants", price: 30, quantity: 1 },
+  { name: "Shoes", price: 50, quantity: 1 },
+  { name: "Hat", price: 10, quantity: 3 },
+];
+
+const getTotalCost = (products) =>
+  products.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
+
+console.log(getTotalCost(newProductsArray));
+// Output: 150
+
+console.log("-------------------------------------");
