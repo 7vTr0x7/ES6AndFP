@@ -49,3 +49,18 @@ const longestString = (strings) =>
 
 console.log(longestString(stringsArray));
 // Output: 'Haule Haule'
+
+console.log("------------------------------");
+
+const people = [
+  { name: "Jeena", age: 25 },
+  { name: "Priya", age: 30 },
+  { name: "Naina", age: 45 },
+];
+
+// Your code here
+const oldestPersonName = (peoples) =>
+  peoples.reduce((acc, curr) => (acc.age > curr.age ? acc.name : curr.name));
+
+console.log(oldestPersonName(people));
+// Output: 'Naina
