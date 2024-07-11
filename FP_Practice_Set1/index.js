@@ -93,3 +93,18 @@ const students = [
 
 console.log(filterByScore(students));
 // Output: [{ name: 'Aditya', score: 85 }, { name: 'Charlie', score: 90 }]
+
+console.log("----------------------------");
+
+const filterByCityAndAge = (peoples) =>
+  peoples.filter((people) => people.city === "Indore" && people.age > 70);
+
+const newPeoplesArray = [
+  { name: "Ridhima", age: 75, city: "Indore" },
+  { name: "Akshay", age: 60, city: "Delhi" },
+  { name: "Udit", age: 80, city: "Indore" },
+  { name: "Venki", age: 80, city: "Bangalore" },
+];
+const filteredPeople = filterByCityAndAge(newPeoplesArray);
+console.log(filteredPeople);
+// Output: [{ name: 'Ridhima', age: 75, city: 'Indore' }, { name: 'Udit', age: 80, city: 'Indore' }]
