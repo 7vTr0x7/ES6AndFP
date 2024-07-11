@@ -111,3 +111,49 @@ console.log(isNamesGreaterThan8(namesArray));
 // Output: "Geetanjali"
 
 console.log("------------------------------------");
+
+const students = [
+  { name: "John", grade: "B" },
+  { name: "Mary", grade: "A" },
+  { name: "Sam", grade: "C" },
+  { name: "Sarah", grade: "A" },
+];
+const findStudentWithGradeA = (students) =>
+  students.find((stud) => stud.grade === "A");
+
+const studentWithGradeA = findStudentWithGradeA(students);
+console.log(studentWithGradeA);
+// Output: { name: "Mary", grade: "A" }
+
+console.log("------------------------------------");
+
+const studentsArray = [
+  { name: "John", grade: "B", scholarship: false },
+  { name: "Mary", grade: "B", scholarship: true },
+  { name: "Sam", grade: "A", scholarship: false },
+  { name: "Sarah", grade: "A", scholarship: true },
+];
+const findStudent = (students) =>
+  students.find((stud) => stud.grade === "A" || stud.scholarship);
+
+const student = findStudent(studentsArray);
+console.log(student);
+// Output: { name: "Mary", grade: "B", scholarship: true }
+
+console.log("------------------------------------");
+
+const newStudentsArray = [
+  { name: "John", grade: "B", scholarship: false },
+  { name: "Mary", grade: "A", scholarship: true },
+  { name: "Sam", grade: "A", scholarship: false },
+  { name: "Sarah", grade: "B", scholarship: true },
+];
+
+const findStudentDetails = (students) =>
+  students.find((stud) => stud.grade === "B" && stud.scholarship);
+
+const studentDetails = findStudentDetails(newStudentsArray);
+console.log(studentDetails);
+// Output: { name: "Sarah", grade: "B", scholarship: true }
+
+console.log("------------------------------------");
