@@ -11,9 +11,24 @@ console.log(names); // Output: ['Raj', 'Swapnil', 'Anushka']
 const numbers = [1, 2, 3, 4];
 // Your code here
 
-console.log("----------------");
+console.log("------------------------------------");
 
 const getMultiplyByFive = (numbers) => numbers.map((num) => num * 5);
 const multiplyByFive = getMultiplyByFive(numbers);
 
 console.log(multiplyByFive); // Output: [5, 10, 15, 20]
+console.log("------------------------------------");
+
+const employeeData = [
+  { name: "ram", dept: "marketer" },
+  { name: "Radha", dept: "SDE" },
+  { name: "shyam", dept: "finance professional" },
+];
+
+const getGreetEmployeeMessages = (employees) =>
+  employees.map(
+    (emp) => `Hi ${emp.name} we are glad to have you as a ${emp.dept}`
+  );
+
+const greetEmployeeMessages = getGreetEmployeeMessages(employeeData);
+console.log(greetEmployeeMessages);
