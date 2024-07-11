@@ -179,3 +179,15 @@ console.log(sumOfEvenNumbers(numbers));
 // Output: 18
 
 console.log("-------------------------------------");
+
+const studentsArray = [
+  { name: "John", score: 80 },
+  { name: "Jane", score: 90 },
+  { name: "Bob", score: 75 },
+  { name: "Alice", score: 85 },
+];
+
+const getAverageScore = (students) =>
+  students.reduce((acc, curr) => acc + curr.score, 0) / students.length;
+console.log(getAverageScore(studentsArray));
+// Output: 82.5
