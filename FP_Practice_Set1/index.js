@@ -80,3 +80,16 @@ const peoplesArray = [
 
 console.log(filterByAge(peoplesArray));
 // Output: [{ name: 'Raj', age: 35 }, { name: 'Vijay', age: 45 }]
+
+console.log("----------------------------");
+
+const filterByScore = (students) => students.filter((stu) => stu.score > 80);
+
+const students = [
+  { name: "Aditya", score: 85 },
+  { name: "Bob", score: 75 },
+  { name: "Charlie", score: 90 },
+];
+
+console.log(filterByScore(students));
+// Output: [{ name: 'Aditya', score: 85 }, { name: 'Charlie', score: 90 }]
