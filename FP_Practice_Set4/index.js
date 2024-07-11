@@ -32,3 +32,12 @@ console.log("------------------------------");
 const concatStrings = (strings) =>
   strings.reduce((acc, curr) => acc + curr, "");
 console.log(concatStrings(["this", "is", "fun"])); // Output: 'thisisfun
+
+const numbersArray = [1, 2, 3, 4, 5];
+// Your code here
+const product = (numbers) => numbers.reduce((acc, curr) => acc * curr);
+
+console.log(product(numbersArray));
+// Output: 120
+
+console.log("------------------------------");
