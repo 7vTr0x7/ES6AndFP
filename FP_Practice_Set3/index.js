@@ -165,3 +165,17 @@ const getTitlesWithMoreThan700Pages = (books) => {
 const booksWithMoreThan700Pages = getTitlesWithMoreThan700Pages(booksArray);
 console.log(booksWithMoreThan700Pages);
 // Output: ["The Lord of the Rings"]
+
+console.log("-------------------------------------");
+
+const numbers = [12, 23, 4, 2, 11, 21];
+// Your code here
+const sumOfEvenNumbers = (numbers) => {
+  const filteredNumbers = numbers.filter((num) => num % 2 === 0);
+  return filteredNumbers.reduce((acc, curr) => acc + curr, 0);
+};
+
+console.log(sumOfEvenNumbers(numbers));
+// Output: 18
+
+console.log("-------------------------------------");
