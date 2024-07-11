@@ -82,3 +82,14 @@ console.log(getProducts(productData, 40));
 // Output: [{prodName: 'Dairy Milk Silk', price: 70}, {prodName: 'Mars', price: 50}]
 
 console.log("------------------------------------");
+
+const numbersArray = [1, 2, 3, 21, 14, 7];
+
+const getDivisibleBy7 = (numbers) => numbers.find((num) => num % 7 === 0);
+
+const isDivisibleBy7 = getDivisibleBy7(numbersArray);
+
+console.log(isDivisibleBy7);
+// Output: 21
+
+console.log("------------------------------------");
