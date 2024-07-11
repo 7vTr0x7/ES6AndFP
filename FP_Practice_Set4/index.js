@@ -64,3 +64,17 @@ const oldestPersonName = (peoples) =>
 
 console.log(oldestPersonName(people));
 // Output: 'Naina
+
+const peopleArray = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+  { name: "David", age: 40 },
+];
+// Your code here
+
+const getAverageAge = (people) =>
+  people.reduce((acc, curr) => acc + curr.age, 0) / people.length;
+
+console.log(getAverageAge(peopleArray));
+// Output: { averageAge: 32.5 }
